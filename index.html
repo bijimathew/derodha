@@ -10,11 +10,11 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Zerodha</title>
   </head>
   <body class="font-mono subpixel-antialiased">
-    <nav class="flex justify-around items-center py-5 px-5 border-b-1">
+    <nav class="flex justify-around items-center py-5 px-5 md:py-2">
       <div>
         <img
           src="https://zerodha.com/static/images/logo.svg"
@@ -35,18 +35,18 @@
     </nav>
 
     <!-- invest in everything -->
-    <div class="px-5 mt-20">
-      <img src="/asset/landing.png" alt="" />
-      <div class="text-center">
-        <h1 class="text-4xl flex-wrap font-medium mt-10 text-gray-800">
+    <div class="px-5 mt-20 md:items-center md:text-3xl">
+      <img src="/asset/landing.png" alt="" class="md:px-60"/>
+      <div class="text-center md:px-60">
+        <h1 class="text-4xl flex-wrap font-medium mt-10 text-gray-800 md:text-5xl">
           Invest in everything
         </h1>
-        <p class="mt-5 text-gray-700">
+        <p class="mt-5 text-gray-700 md:text-2xl">
           Online platform to invest in stocks, derivatives, mutual funds, ETFs,
           bonds and more.
         </p>
         <button
-          class="px-6 py-2 bg-sky-600 mt-6 text-white rounded-b-md hover:bg-gray-900"
+          class="px-6 py-2 bg-sky-600 mt-6 md:mt-10 md:px-2 text-2xl text-white rounded-sm hover:bg-gray-900"
         >
           Sign up for free
         </button>
@@ -55,8 +55,8 @@
 
     <!-- trust and confidence -->
 
-    <div class="mt-10 flex flex-wrap p-5">
-      <div>
+    <div class="mt-10 flex flex-wrap p-5 md:px-40 md:justify-evenly md:items-center md:mt-40 md:ml-20">
+      <div class="md:basis-1/3">
         <h3 class="text-3xl py-2 text-gray-800">Trust with confidence</h3>
         <div class="mt-5">
           <h3 class="text-xl py-2 text-gray-800">Customer-first always</h3>
@@ -90,50 +90,51 @@
         </div>
       </div>
 
-      <div class="mt-5 mb-15">
-        <img src="/asset/ecosystem.png" alt="" />
+      <div class="mt-5 mb-15 md:items-center md:px-40 md:basis-1/2">
+        <img src="/asset/ecosystem.png" alt=""/>
         <p class="px-5 text-sky-600">
-          <a href="#" class="mr-5">Explore our products</a>
+          <a href="#" class="mr-5 md:text-center">Explore our products</a>
           <a href="#" class="ml-5">Try kite demo</a>
         </p>
       </div>
-      <img src="/asset/press-logos.png" alt="" />
+      <img src="/asset/press-logos.png" alt="" class="md:mx-auto md:mt-20" /> 
     </div>
 
     <!-- unbeatable pricing section -->
-    <div class="p-5 mt-5">
-      <div>
+    <div class="p-5 mt-5 md:flex md:justify-evenly md:mt-20">
+      <div class="md:basis-1/4">
         <h2 class="text-3xl py-2 text-gray-800">unbeatable pricing</h2>
         <p class="mt-5 text-gray-700">
           We pioneered the concept of discont broking and price transparency in
           india. Flat fees and no hidden charges.
         </p>
+        <p class="text-sky-600 py-5 font-medium">See pricing</p>
       </div>
-      <div class="mt-5 px-3">
-        <div class="flex flex-wrap">
-          <div class="basis-1/2">
+      <div class="mt-5 px-3 md:basis-1/4">
+        <div class="flex flex-wrap md:inline-flex md:gap-2">
+          <div class="basis-1/2 md:basis-1/4">
             <img src="/asset/0.svg" alt="" />
             <p class="text-gray-400">Free account opening</p>
           </div>
-          <div class="basis-1/2">
+          <div class="basis-1/2 md:basis-1/4">
             <img src="/asset/0.svg" alt="" />
             <p class="text-gray-400">Free equity delivery and direct mutual funds</p>
           </div>
-          <div class="basis-1/2">
+          <div class="basis-1/2 md:basis-1/4">
             <img src="/asset/20.svg" alt="" />
             <p class="text-gray-400">Intraday and F&O</p>
           </div>
         </div>
-        <p class="text-sky-600 py-5 font-medium">See pricing</p>
+        <p class="text-sky-600 py-5 font-medium md:invisible">See pricing</p>
       </div>
     </div>
 
     <!-- education -->
-    <div class="p-5">
-      <div>
+    <div class="p-5 md:flex md:justify-center">
+      <div class="md:basis-1/3">
         <img src="/asset/varsity.svg" alt="" />
       </div>
-      <div class="py-5 mt-5">
+      <div class="py-5 mt-5 md:basis-1/3">
         <h2 class="text-3xl py-2 font-medium">
           Free and open market education
         </h2>
@@ -151,7 +152,7 @@
     </div>
 
     <!-- account open -->
-    <div class="p-5 text-center">
+    <div class="p-5 text-center md:mt-20 md:mb-20">
       <h2 class="text-3xl py-2 font-medium text-center text-gray-800">
         Open a Zerodha account
       </h2>
@@ -160,53 +161,53 @@
         trades.
       </p>
       <button
-        class="px-6 py-2 bg-sky-600 mt-6 text-white rounded-b-md hover:bg-gray-900"
+        class="px-6 py-2 bg-sky-600 mt-6 text-white rounded-sm hover:bg-gray-900"
       >
         Sign up for free
       </button>
     </div>
 
     <!-- footer -->
-    <div class="bg-gray-50 flex flex-wrap flex-col p-5 text-gray-700">
-      <div class="">
-        <img src="/asset/logo.svg" alt="" class="h-5 w-fit" />
+    <div class="bg-gray-50 flex flex-wrap flex-col p-5 text-gray-700 md:flex-row md:text-center md:px-80">
+      <div class="md:basis-1/4">
+        <img src="/asset/logo.svg" alt="" class="h-5 w-fit md:ml-20" />
         <p class="py-5">
           2010 - 2025, Zerodha Broking Ltd<br />All rights reserved.
         </p>
       </div>
-      <div class="list-none py-5 hover:text-sky-700">
+      <div class="list-none py-5 md:basis-1/4">
         <h3>Company</h3>
-        <li>About</li>
-        <li>Products</li>
-        <li>Pricing</li>
-        <li>Referral programme</li>
-        <li>Careers</li>
-        <li>Zerodha.tech</li>
-        <li>Open source</li>
-        <li>Press & media</li>
-        <li>Zerodha Cares (CSR)</li>
+        <li class="hover:text-sky-700">About</li>
+        <li class="hover:text-sky-700">Products</li>
+        <li class="hover:text-sky-700">Pricing</li>
+        <li class="hover:text-sky-700">Referral programme</li>
+        <li class="hover:text-sky-700">Careers</li>
+        <li class="hover:text-sky-700">Zerodha.tech</li>
+        <li class="hover:text-sky-700">Open source</li>
+        <li class="hover:text-sky-700">Press & media</li>
+        <li class="hover:text-sky-700">Zerodha Cares (CSR)</li>
       </div>
-      <div class="list-none py-5 hover:text-sky-700">
+      <div class="list-none py-5 md:basis-1/4">
         <h3>Support</h3>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Support portal</a></li>
-        <li><a href="#">Z-Connect blog</a></li>
-        <li><a href="#">List of charges</a></li>
-        <li><a href="#">Downloads & resources</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Market overview</a></li>
-        <li><a href="#">How to file a complaint?</a></li>
-        <li><a href="#">Status of your complaints</a></li>
+        <li class="hover:text-sky-700"><a href="#">Contact us</a></li>
+        <li class="hover:text-sky-700"><a href="#">Support portal</a></li>
+        <li class="hover:text-sky-700"><a href="#">Z-Connect blog</a></li>
+        <li class="hover:text-sky-700"><a href="#">List of charges</a></li>
+        <li class="hover:text-sky-700"><a href="#">Downloads & resources</a></li>
+        <li class="hover:text-sky-700"><a href="#">Videos</a></li>
+        <li class="hover:text-sky-700"><a href="#">Market overview</a></li>
+        <li class="hover:text-sky-700"><a href="#">How to file a complaint?</a></li>
+        <li class="hover:text-sky-700"><a href="#">Status of your complaints</a></li>
       </div>
-      <div class="list-none py-5 hover:text-sky-700">
+      <div class="list-none py-5 md:basis-1/4">
         <h3>account</h3>
-        <li><a href="#">Open an account</a></li>
-        <li><a href="#">Fund transfer</a></li>
+        <li class="hover:text-sky-700"><a href="#">Open an account</a></li>
+        <li class="hover:text-sky-700"><a href="#">Fund transfer</a></li>
       </div>
     </div>
 
     <!-- disclaimer -->
-     <div class="p-5 bg-gray-50 text-gray-500">
+     <div class="p-5 bg-gray-50 text-gray-500 md:px-80">
         <div>
             <p>
                 Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.: INZ000038238 Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any complaints pertaining to securities broking please write to <span class="text-sky-600">complaints@zerodha.com</span>, for DP related to <span class="text-sky-600">dp@zerodha.com</span>. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF
